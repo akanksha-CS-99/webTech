@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style1.css"> 
+
+    <title>Home</title>
+
+    <style type="text/css">
+
+      .quote
+ {font-size: 25pt;
+  font-family:gabriola, Georgia, times;
+  color:white ;
+  background-color:black;
+  opacity:1;
+  position:static;
+}
+
+.featured
+ {font-size: 25pt;
+  font-family:gabriola, Georgia, times;
+  color:white;
+  width: 55%;
+  position:static;
+ }   
+
+can{
+background: #800080;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+    </style>
+  </head>
+
+  
+
+
+
+  <body>
+    
+  <nav class="navbar navbar-light" id="navbar">
+  <a href="index.html" class="navbar-brand " id="logo">Book Releam</a>
+  <ul class="nav justify-content-center" class="navlink" style="font-weight: bold;">
+  <li class="nav-item">
+    <a  href="index.html">Home</a>&emsp;&emsp;
+  </li>
+  <li class="nav-item">
+    <a href="about.html">About</a>&emsp;&emsp;
+  </li>
+  <li class="nav-item">
+    <a href="contact.html">Contact</a>&emsp;&emsp;
+  </li>
+</ul>
+  <!-- Search form -->
+<div class="input-group mb-2" style="width: 200px;">
+  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2"><svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+</svg></span>
+  </div>
+</div>
+</nav>
+<br><br>
+
+<table width="90%" cellpadding="30" align="Center" >
+    <tr align="center">
+      <td class="quote" align="center"> <u>Quotes of the day</u> <br>
+
+ <font face="Footlight MT", size= 5, color="#fce4ec ">
+ “Be yourself; everyone else is already taken.” - Oscar Wilde <br>
+ 
+ “Accept who you are. Unless you're a serial killer.” - Ellen DeGeneres <br>
+
+ 
+  “Everything you can imagine is real.” -Pablo Picasso <br>
+   
+ <br><br>
+ </font> </td>
+<td  class="featured" align="center"><u> Featured books </u><br>
+ <a href="Mystery2.html" target="_blank"><img src="../images/Thegirl.jpg" alt="The girl on the train" height="160" width="100"></a> &ensp;
+ <a href="Fiction2.html" target="_blank"><img src="../images/Fault.jpg" alt="fault in our starts" height="160" width="100"></a> &ensp;
+ <a href="Scific2.html" target="_blank"><img src="../images/Thrawn.jpg" alt="Thrawn" height="160" width="100"></a> &ensp;
+ <a href="romance1.html" target="_blank"><img src="../images/Without.jpg" alt="without Merit" height="160" width="100"></a> &ensp; 
+
+<br><br>
+ <a href="horror1.html" target="_blank"><img src="../images/Sleeping.jpg" alt="Sleeping beauties" height="160" width="100"></a> &ensp;
+ <a href="Fantasy2.html" target="_blank"><img src="../images/Oathbringer.jpg" alt="Oathbringer" height="160" width="100"></a> &ensp;
+ <a href="Fiction3.html" target="_blank"><img src="../images/Before.jpg" alt="Before We Were Yours" height="160" width="100"></a> &ensp;
+<a href="horror2.html" target="_blank"><img src="../images/moon.jpg" alt="full wolf moon" height="160" width="100"></a> &ensp;
+</tr>
+</table>
+
+<br><br>
+
+
+<div align="center">
+<div style="width: 90%;">
+<table class="table table-dark" border="2" cellpadding="20">
+  <caption>Type of books available</caption>
+  <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Genre</th>
+      <th scope="col">About</th>
+      <th scope="col">No. of books</th>
+      <th scope="col">Reads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><a href="mystery.html"> Mystery</a></td>
+      <td width="40%">Mystery fiction is a genre of fiction usually involving a mysterious death or a crime to be solved. Often with a closed circle of suspects, each suspect is usually provided with a credible motive and a reasonable opportunity for committing the crime.</td>
+      <td>989</td>
+      <td><canvas id="myCanvas" width="200" height="40" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
+my_gradient.addColorStop(0, "#FC5C7D");
+my_gradient.addColorStop(1, "#6A82FB");
+ctx.fillStyle = my_gradient;
+ctx.fillRect(0, 0, 180, 40);
+</script></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><a href="horror.html">Horror</a></td>
+      <td >Horror is a genre of speculative fiction which is intended to frighten, scare, disgust, or startle its readers by inducing feelings of horror and terror.</td>
+      <td>1324</td>
+      <td><canvas id="myCanvas1" width="200" height="40" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas1");
+var ctx = c.getContext("2d");
+var my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
+my_gradient.addColorStop(0, "#FC5C7D");
+my_gradient.addColorStop(1, "#6A82FB");
+ctx.fillStyle = my_gradient;
+ctx.fillRect(0, 0, 130, 40);
+</script></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><a href="science_fiction.html">Science Fiction</a></td>
+      <td>Science fiction is a genre of speculative fiction that typically deals with imaginative and futuristic concepts such as advanced science and technology, space exploration, time travel, parallel universes, and extraterrestrial life</td>
+      <td>1251</td>
+      <td><canvas id="myCanvas2" width="200" height="40" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas2");
+var ctx = c.getContext("2d");
+var my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
+my_gradient.addColorStop(0, "#FC5C7D");
+my_gradient.addColorStop(1, "#6A82FB");
+ctx.fillStyle = my_gradient;
+ctx.fillRect(0, 0, 150, 40);
+</script></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<br><br>
+
+<div align="center">
+<p> New arrival </p>
+<img src="../images/new.jpg" alt="The vinci code" height="400" width="259" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="4,162,248,393" alt="book" href="https://en.wikipedia.org/wiki/The_Da_Vinci_Code" target="_blank">
+  <area shape="rect" coords="6,14,250,136" alt="author" href="https://danbrown.com/" target="_blank">
+ 
+</map>
+</div>
+
+
+
+
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Heading 1</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Payment Center</a></li>
+            <li><a href="#">Contact Directory</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Heading 2</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Tutorial</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Heading 3</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Parks and Recreation</a></li>
+            <li><a href="#">Public Works</a></li>
+            <li><a href="#">Police Department</a></li>
+            <li><a href="#">Fire</a></li>
+            <li><a href="#">Mayor and City Council</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>       
+    </div>
+    </div>
+  <div class="row">
+    <div class="col-md-12 copy">
+      <p class="text-center">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
+    </div>
+  </div>
+
+  </div>
+  </div>
+</footer>
+    
+
+
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
