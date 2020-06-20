@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/style1.css"> 
 
     <title>Home</title>
+    
+    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript" src="../jquery/turn.min.js"></script>
 
     <style type="text/css">
 
@@ -17,7 +20,7 @@
  {font-size: 25pt;
   font-family:gabriola, Georgia, times;
   color:white ;
-  background-color:black;
+  background-color:transparent;
   opacity:1;
   position:static;
 }
@@ -28,12 +31,37 @@
   color:white;
   width: 55%;
   position:static;
- }   
+ } 
 
+
+ #flipbook .page {
+    background-color: white;
+    color: black;
+    border:1px solid;
+ }
+
+ #box{
+ 	box-shadow:0 10px 16px 0 rgba(0,0,0,0.6),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+ 	height: 550px;
+ 	width: 1200px;
+ 	background-color: black;
+ 	background: #3a6186;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    
+ }
+
+.carousel {
+  width:1200px;
+  height:550px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.6),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  background-color: black;
+}
+ 
     </style>
   </head>
-
-  
 
 
 
@@ -77,40 +105,39 @@
 </div>
 
 <br><br>
-
-<table width="90%" cellpadding="30" align="Center" >
-    <tr align="center">
-      <td class="quote" align="center"> <u>Quotes of the day</u> <br>
-
- <font face="Footlight MT", size= 5, color="#fce4ec ">
- “Be yourself; everyone else is already taken.” - Oscar Wilde <br>
- 
- “Accept who you are. Unless you're a serial killer.” - Ellen DeGeneres <br>
-
- 
-  “Everything you can imagine is real.” -Pablo Picasso <br>
-   
- <br><br>
- </font> </td>
-<td  class="featured" align="center"><u> Featured books </u><br>
- <a href="Mystery2.html" target="_blank"><img src="../images/Thegirl.jpg" alt="The girl on the train" height="160" width="100"></a> &ensp;
- <a href="Fiction2.html" target="_blank"><img src="../images/Fault.jpg" alt="fault in our starts" height="160" width="100"></a> &ensp;
- <a href="Scific2.html" target="_blank"><img src="../images/Thrawn.jpg" alt="Thrawn" height="160" width="100"></a> &ensp;
- <a href="romance1.html" target="_blank"><img src="../images/Without.jpg" alt="without Merit" height="160" width="100"></a> &ensp; 
-
-<br><br>
- <a href="horror1.html" target="_blank"><img src="../images/Sleeping.jpg" alt="Sleeping beauties" height="160" width="100"></a> &ensp;
- <a href="Fantasy2.html" target="_blank"><img src="../images/Oathbringer.jpg" alt="Oathbringer" height="160" width="100"></a> &ensp;
- <a href="Fiction3.html" target="_blank"><img src="../images/Before.jpg" alt="Before We Were Yours" height="160" width="100"></a> &ensp;
-<a href="horror2.html" target="_blank"><img src="../images/Romance3.jpg" alt="from here to you" height="160" width="100"></a> &ensp;
-</tr>
-</table>
-
-<br><br>
+<div align="center">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/car3.png"   width="1200" height="500" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/car2.png"   width="1200" height="500" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/car1.png"   width="1200" height="500" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<br><br><br>
 
 
 <div align="center">
-<div style="width: 90%;">
+<div style="width: 1200px;">
 <table class="table table-dark" border="2" cellpadding="20">
   <caption>Type of books available</caption>
   <thead>
@@ -183,19 +210,65 @@ ctx.fillRect(0, 0, 150, 40);
 </div>
 <br><br>
 
-<div align="center">
-<p> New arrival </p>
-<img src="../images/new.jpg" alt="The vinci code" height="400" width="259" usemap="#workmap">
+<div class="container-fluid" align="center" id="box">
+	<br>
+    <div id="flipbook" >
 
-<map name="workmap">
-  <area shape="rect" coords="4,162,248,393" alt="book" href="https://en.wikipedia.org/wiki/The_Da_Vinci_Code" target="_blank">
-  <area shape="rect" coords="6,14,250,136" alt="author" href="https://danbrown.com/" target="_blank">
- 
-</map>
+	<div>
+		<img src="../images/newa.jpg" alt="new arrivals" height="500" width="400"  >
+	</div>
+    
+    <div>
+      <br>
+    <img src="../images/without.jpg" alt="new arrivals" height="400" width="300" style="border: 2px;">
+    <br>
+    <p><i>by Colleen Hoover</i></p>
+    <p><b>1</b></p>
+	</div>
+
+
+	<div>
+<br>
+    <img src="../images/Oathbringer.jpg" alt="new arrivals" height="400" width="300">
+    <br>
+		<p><i>by Brandon Sanderson</i></p>
+    <p><b>2</b></p>
+	</div>
+
+
+	<div>
+<br>
+    <img src="../images/best1.jpg" alt="new arrivals" height="400" width="300">
+    <br>
+    <p><i>by Celeste Ng</i></p>
+    <p><b>4</b></p>
+  </div>
+
+
+	<div>
+<br>
+    <img src="../images/Scific3.jpg" alt="new arrivals" height="400" width="300">
+    <br>
+    <p><i>by Alexandra Bracken</i></p>
+    <p><b>5</b></p>
+  </div>
+
 </div>
 
 
+<!-- JavaScript for flipbook -->
 
+<script type="text/javascript">
+	
+   $('#flipbook').turn({
+   	width:800,
+   	height:500, 
+    autocenter: true,
+    duration: 2000
+   })
+
+</script>
+</div>
 
 
 <footer class="mainfooter" role="contentinfo">

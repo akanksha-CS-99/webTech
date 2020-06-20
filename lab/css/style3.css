@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+#hed{
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  color:Black;
+}
+
+#cf{
+ 
+  height:300px;
+  width:400px;
+  margin:0 auto;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+#cf img {
+  
+  border-radius: 10%;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
