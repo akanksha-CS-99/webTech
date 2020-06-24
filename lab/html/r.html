@@ -1,51 +1,21 @@
-<div id="flipbook">
+<!-- 
+ -->
 
-	<div >
-		<h1>Page 1</h1>
-		<p>this is page 1</p>
-	</div>
-
-    <div>
-		<h1>Page 2</h1>
-		<p>this is page 2</p>
-	</div>
-
-
-	<div>
-		<h1>Page 2</h1>
-		<p>this is page 2</p>
-	</div>
-
-
-	<div>
-		<h1>Page 2</h1>
-		<p>this is page 2</p>
-	</div>
-
-
-	<div>
-		<h1>Page 2</h1>
-		<p>this is page 2</p>
-	</div>
-
-</div>
-
-
-<!-- JavaScript for flipbook -->
-
-<script type="text/javascript">
-	
-   $('#flipbook').turn({
-   	width:600,
-   	height:400, 
-    autocenter: true,
-    duration: 2000
-   })
-
-</script>
-
-
-<div id="cf">
-  <img class="bottom" src="../images/back.jpg" height="200" width="300" />
-  <img class="top" src="../images/horror.jpg"  height="200" width="300" />
-</div>
+ <!DOCTYPE html>  
+<html>  
+<body>  
+<h1>My First Google Map</h1>  
+<div id="map" style="width:400px;height:400px;background:grey"></div>  
+<script>  
+function myMap() {  
+var mapOptions = {  
+    center: new google.maps.LatLng(51.5, -0.12),  
+    zoom: 10,  
+    mapTypeId: google.maps.MapTypeId.HYBRID  
+}  
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+}  
+</script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>  
+</body>  
+</html>  
