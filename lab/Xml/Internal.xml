@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE user [
+   <!ELEMENT user (name,email,country,phone)>
+   <!ELEMENT fname (#PCDATA)>
+   <!ELEMENT lname (#PCDATA)>
+   <!ELEMENT email (#PCDATA)>
+   <!ELEMENT gender (#PCDATA)>
+   <!ELEMENT country (#PCDATA)>
+   <!ELEMENT DOB (#PCDATA)>
+   <!ELEMENT phone (#PCDATA)>
+]>
+
+<user>
+   <fname>Nikhil</fname>
+   <lname>Singh</lname>
+   <email>nikhil@123@gmail.com</email>
+   <gender>Male</gender>
+   <country>India</country>
+   <DOB>28/06/1998</DOB>
+   <phone>8298342984</phone>
+</user>

@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<Mystery>
+<book>
+ <title>Into the water</title>
+ <author>Paula Hawkins</author>
+ <country> United Kingdom </country>
+ <published>  05/02/2017 </published>
+</book>
+
+<book>
+ <title>The Girl on the Train</title>
+ <author>Paula Hawkins</author>
+ <country> United Kingdom </country>
+ <published>  13 Jan 2015 (Riverhead, US)
+15 Jan 2015 (Doubleday, UK) </published>
+</book>
+
+<book>
+ <title>Four Weddings and a Funeral</title>
+ <author>Richard Curtis</author>
+ <country> United Kingdom </country>
+ <published>20 January 1994 </published>
+</book>
+</Mystery>

@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style1.css"> 
+    <link rel="stylesheet" href="../css/style3.css">
 
     <title>Home</title>
     
@@ -256,6 +257,7 @@ ctx.fillRect(0, 0, 150, 40);
 </div>
 
 
+
 <!-- JavaScript for flipbook -->
 
 <script type="text/javascript">
@@ -269,6 +271,147 @@ ctx.fillRect(0, 0, 150, 40);
 
 </script>
 </div>
+
+<br><br><br><br><br>
+
+<div class="container-fluid" align="center" id="box" style="background: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;"> <br><br>
+<p id="hed">Featured Author's Corner</p>
+<br>
+
+<button type="button" class="btn btn-outline-dark"onclick="mys()">Mystery</button> <button type="button" class="btn btn-outline-dark" onclick="hor()">Horror</button> <button type="button" class="btn btn-outline-dark" onclick="sci()">Science Fiction</button>
+<br>
+<br>
+<br>
+<br>
+<p id="a"></p>
+<script>
+
+function mys(){
+var parser, xmlDoc, x, i, txt;
+var text = 
+"<Mystery>"+
+"<book>"+
+"<title>Into the water</title>"+
+"<author>Paula Hawkins</author>"+
+"<country> United Kingdom </country>"+
+"<published>  05/02/2017 </published>"+
+"</book>"+
+
+"<book>"+
+"<title>The Girl on the Train</title>"+
+"<author>Paula Hawkins</author>"+
+"<country> United Kingdom </country>"+
+"<published>  13 Jan 2015 (Riverhead, US) 15 Jan 2015 (Doubleday, UK) </published>"+
+"</book>"+
+
+"<book>"+
+"<title>Four Weddings and a Funeral</title>"+
+"<author>Richard Curtis</author>"+
+"<country> United Kingdom </country>"+
+"<published>20 January 1994 </published>"+
+"</book>"+
+"</Mystery>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+txt="";
+
+x= xmlDoc.getElementsByTagName("author");
+y= xmlDoc.getElementsByTagName("title");
+
+for (i = 0; i< x.length; i++) {
+    txt += (i+1)+". "+x[i].childNodes[0].nodeValue +" - "+y[i].childNodes[0].nodeValue +"<br><br>";
+  }
+  document.getElementById("a").innerHTML = txt;
+}
+
+function hor(){
+var parser, xmlDoc, x, i, txt;
+var text = 
+"<Mystery>"+
+"<book>"+
+"<title>The Year of the Witching</title>"+
+"<author> Alexis Henderson </author>"+
+"<country> United Kingdom </country>"+
+"<published>  05/02/2017 </published>"+
+"</book>"+
+
+"<book>"+
+"<title>A Wicked Magic</title>"+
+"<author> Sasha Laurens </author>"+
+"<country> United Kingdom </country>"+
+"<published>  13 Jan 2015 (Riverhead, US) 15 Jan 2015 (Doubleday, UK) </published>"+
+"</book>"+
+
+"<book>"+
+"<title>The Only Good Indians</title>"+
+"<author>Stephen Graham Jones </author>"+
+"<country> United Kingdom </country>"+
+"<published>20 January 1994 </published>"+
+"</book>"+
+"</Mystery>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+txt="";
+
+x= xmlDoc.getElementsByTagName("author");
+y= xmlDoc.getElementsByTagName("title");
+
+for (i = 0; i< x.length; i++) {
+    txt += (i+1)+". "+x[i].childNodes[0].nodeValue +" - "+y[i].childNodes[0].nodeValue +"<br><br>";
+  }
+  document.getElementById("a").innerHTML = txt;
+}
+
+
+function sci(){
+var parser, xmlDoc, x, i, txt;
+var text = 
+"<Mystery>"+
+"<book>"+
+"<title>A Beautifully Foolish Endeavor</title>"+
+"<author>  Hank Green </author>"+
+"<country> United Kingdom </country>"+
+"<published>  05/02/2017 </published>"+
+"</book>"+
+
+"<book>"+
+"<title>The Relentless Moon</title>"+
+"<author> Mary Robinette Kowal </author>"+
+"<country> United Kingdom </country>"+
+"<published>  13 Jan 2015 (Riverhead, US) 15 Jan 2015 (Doubleday, UK) </published>"+
+"</book>"+
+
+"<book>"+
+"<title>Chaos Vector</title>"+
+"<author> Megan E. O'Keefe</author>"+
+"<country> United Kingdom </country>"+
+"<published>20 January 1994 </published>"+
+"</book>"+
+"</Mystery>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+txt="";
+
+x= xmlDoc.getElementsByTagName("author");
+y= xmlDoc.getElementsByTagName("title");
+
+for (i = 0; i< x.length; i++) {
+    txt += (i+1)+". "+x[i].childNodes[0].nodeValue +" - "+y[i].childNodes[0].nodeValue +"<br><br>";
+  }
+  document.getElementById("a").innerHTML = txt;
+}
+
+</script>
+
+</div>
+
+
 
 
 <footer class="mainfooter" role="contentinfo">

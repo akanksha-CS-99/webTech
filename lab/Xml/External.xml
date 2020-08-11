@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE user SYSTEM "user.dtd">
+<user>
+   <fname>Nikhil</fname>
+   <lname>Singh</lname>
+   <email>nikhil@123@gmail.com</email>
+   <gender>Male</gender>
+   <country>India</country>
+   <DOB>28/06/1998</DOB>
+   <phone>8298342984</phone>
+</user>
